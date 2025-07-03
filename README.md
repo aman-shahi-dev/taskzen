@@ -1,1 +1,1 @@
-(LINK)[https://aman-shahi-dev.github.io/taskzen/]
+[Link](https://aman-shahi-dev.github.io/taskzen/)
