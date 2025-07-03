@@ -35,3 +35,15 @@ setInterval(updateClock, 1000);
 
 // Stopwatch ka implementation
 
+
+
+const todoul = document.getElementById('todoul')
+
+const addTaskBtn = document.getElementById('addTaskBtn')
+
+addTaskBtn.addEventListener('click', () => {
+    const li = document.createElement('li')
+    li.innerHTML = `<textarea class="li-textarea">Task-1</textarea> <button>Edit</button> <button>Mark as completed</button> <button>Delete</button>`
+    li.classList = 'li-class'
+    todoul.prepend(li)
+})
