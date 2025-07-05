@@ -15,6 +15,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 h1 {
@@ -42,7 +43,7 @@ button:active{
 
 .footer{
   width: 100%;
-  height: 8%;
+  height: 5%;
   background-color: black;
   border-top: 1px solid white;
   color: white;
@@ -51,6 +52,7 @@ button:active{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* overflow: hidden; */
 }
 
 .footer a{
@@ -60,6 +62,7 @@ button:active{
 
 .footer h1{
   margin-left: 140px;
+  user-select: none;
 }
 
 .links{
@@ -71,9 +74,10 @@ button:active{
 
 .container {
   width: 100%;
-  height: 92%;
+  height: 95%;
   background: black;
   padding: 1rem;
+  overflow: hidden;
 }
 
 .corner-box {
@@ -245,46 +249,72 @@ button:active{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /* background-color: #607d8b; */
+  overflow: hidden;
+}
+
+.heading{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .line{
+  overflow: hidden;
   width: 100%;
+  height: 1%;
   border-bottom: 1px solid white;
 }
 
-.todoList{
+.todoContent{
   width: 100%;
-  height: 98%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  padding: 1rem 2rem;
+  height: 89%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  /* background: rgb(204, 143, 31); */
+  flex: 1;
+  overflow: hidden;
+}
+
+.todoList{
+  width: 85%;
+  height: 100%;
+  padding: 1rem 1rem;
   font-size: 1.2rem;
   border-radius: 12px;
   /* background-color: #03a9f4; */
   display: flex;
   justify-content: space-between;
-}
-
-.todoContent{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background: wheat; */
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 #todoul{
   width: 100%;
-  /* scrollbar-width: none; */
-  overflow: auto;
-  /* background: blueviolet; */
-  padding: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 1rem;
   border-right: 1px solid white;
+  /* background: blueviolet; */
+  overflow-y: auto;
+}
+
+#todoul::after {
+  content: '';
+  display: block;
+  height: 1rem;  
 }
 
 .li-class{
   width: 100%;
+  min-height: 80px;
+  /* background-color: pink; */
   font-size: 1.2rem;
   color: white;
   margin-bottom: 20px;
@@ -306,6 +336,17 @@ button:active{
   display: flex;
   padding: 1.5rem;
 }
+
+.todoContentBtn{
+  /* background-color: aqua; */
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 .bottom{
   width: 100%;
